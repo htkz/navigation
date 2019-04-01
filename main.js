@@ -69,7 +69,7 @@ bindJump = () => {
 bindEdit = () => {
   $("#keyboard").on('click', 'button', (event) => {
     const key = $(event.target).attr('id');
-    const inputUrl = prompt("请输入网址！");
+    const inputUrl = prompt("请输入网址！", "www.baidu.com");
     if (inputUrl === null) return;
     websites[key] = inputUrl;
     $(event.target).siblings('img.ico').attr('src', 'https://' +inputUrl + "/favicon.ico");
