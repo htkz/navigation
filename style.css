@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+body {
+  background-color: #ccc;
+  background: url('./img/background.png');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.wrapper {
+  width: 80vw;
+}
+
+
+header h1 {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+}
+
+
+.instruction {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.instruction h2 {
+  text-align: center;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 100px 0 50px 0;
+
+}
+
+#keyboard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #555;
+  padding: 10px;
+  /* position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%); */
+}
+
+#keyboard kbd {
+  margin: 4px;
+  width: 4em;
+  height: 4em;
+  display: inline-block;
+  position: relative;
+  background-color: #302F37;
+  color: #ccc;
+  border-radius: 7px;
+}
+
+#keyboard .edit {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#keyboard kbd:hover .edit {
+  opacity: 1;
+}
+
+
+#keyboard span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-family: helvetica;
+
+}
+
+#keyboard .edit {
+  opacity: 0;
+}
+
+#keyboard img.ico {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
